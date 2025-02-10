@@ -19,7 +19,7 @@ def train_model():
         tokenizer = AutoTokenizer.from_pretrained(model_path)
         model = AutoModelForCausalLM.from_pretrained(
             model_path,
-            torch_dtype=torch.float16 if device == "cuda" else torch.float32,
+            torch_dtype=torch.float32,  # Use float32 for CPU
             trust_remote_code=True
         )
         
@@ -48,14 +48,14 @@ def train_model():
 
         training_args = TrainingArguments(
             output_dir="./trained_model",
-            per_device_train_batch_size=2,
-            gradient_accumulation_steps=4,
+            per_device_train_batch_size=1,  # Reduce batch size for CPU
+            gradient_accumulation_steps=8,  # Increase to simulate larger batch size
             num_train_epochs=3,
             save_steps=100,
             logging_steps=50,
             learning_rate=1e-5,
             warmup_steps=100,
-            fp16=device == "cuda",
+            fp16=False,  # Disable mixed precision as it's not supported on CPU
             save_total_limit=2,
         )
 
