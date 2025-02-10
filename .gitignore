@@ -1,0 +1,22 @@
+# Model directories
+local_deepseek_model/
+trained_model/
+final_model/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Training logs
+logs/
+*.log
+
+# Environment
+.env
+.venv
+venv/
+ENV/
+
+# OS files
+.DS_Store

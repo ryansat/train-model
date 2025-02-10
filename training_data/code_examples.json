@@ -1,0 +1,34 @@
+[
+  {
+    "code": "def calculate_sum(a, b):\n    \"\"\"Calculate the sum of two numbers.\"\"\"\n    return a + b",
+    "description": "Function to add two numbers"
+  },
+  {
+    "code": "def is_palindrome(text):\n    \"\"\"Check if a string is palindrome.\"\"\"\n    text = text.lower()\n    return text == text[::-1]",
+    "description": "Function to check palindrome"
+  },
+  {
+    "code": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    \n    def area(self):\n        return self.width * self.height",
+    "description": "Class representing a rectangle"
+  },
+  {
+    "code": "def process_list_0(items):\n    \"\"\"Process a list of items.\"\"\"\n    return [item.upper() if isinstance(item, str) else item * 2 for item in items]",
+    "description": "Function to process list items (example 0)"
+  },
+  {
+    "code": "def process_list_1(items):\n    \"\"\"Process a list of items.\"\"\"\n    return [item.upper() if isinstance(item, str) else item * 2 for item in items]",
+    "description": "Function to process list items (example 1)"
+  },
+  {
+    "code": "def process_list_2(items):\n    \"\"\"Process a list of items.\"\"\"\n    return [item.upper() if isinstance(item, str) else item * 2 for item in items]",
+    "description": "Function to process list items (example 2)"
+  },
+  {
+    "code": "def process_list_3(items):\n    \"\"\"Process a list of items.\"\"\"\n    return [item.upper() if isinstance(item, str) else item * 2 for item in items]",
+    "description": "Function to process list items (example 3)"
+  },
+  {
+    "code": "def process_list_4(items):\n    \"\"\"Process a list of items.\"\"\"\n    return [item.upper() if isinstance(item, str) else item * 2 for item in items]",
+    "description": "Function to process list items (example 4)"
+  }
+]
